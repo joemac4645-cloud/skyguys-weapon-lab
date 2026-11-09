@@ -168,7 +168,7 @@ def main():
     if changes:
         last={"checkedAt":now,"beforeSha256":prev_hash,"afterSha256":new_hash,
               "totalChanged":len(changes),"newCount":len(new_ids),"removedCount":len(removed_ids),"changes":changes,
-              "note":"Source numeric differences do not prove intentional in-game balance changes."}
+              "note":"Source values, including firing-mode options, may change without a confirmed EA balance patch."}
         write(DATA/"last-changes.json",last)
         history.insert(0,{"at":now,"count":len(changes),"new":len(new_ids),"removed":len(removed_ids),
                           "weapons":[c["weapon"] for c in changes],"oldHash":prev_hash[:16],"newHash":new_hash[:16]})
