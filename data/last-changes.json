@@ -38,7 +38,8 @@
         "ttk0mDisplayed": 183,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false
+      "tournamentStatusChanged": false,
+      "changeType": "firing_mode_options"
     },
     {
       "id": "kord6p67",
@@ -72,7 +73,8 @@
         "ttk0mDisplayed": 267,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false
+      "tournamentStatusChanged": false,
+      "changeType": "firing_mode_options"
     },
     {
       "id": "kv9",
@@ -106,7 +108,8 @@
         "ttk0mDisplayed": 167,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false
+      "tournamentStatusChanged": false,
+      "changeType": "firing_mode_options"
     },
     {
       "id": "pw5a3",
@@ -140,7 +143,8 @@
         "ttk0mDisplayed": 233,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false
+      "tournamentStatusChanged": false,
+      "changeType": "firing_mode_options"
     },
     {
       "id": "sg553r",
@@ -174,7 +178,8 @@
         "ttk0mDisplayed": 167,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false
+      "tournamentStatusChanged": false,
+      "changeType": "firing_mode_options"
     },
     {
       "id": "umg40",
@@ -208,8 +213,9 @@
         "ttk0mDisplayed": 283,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false
+      "tournamentStatusChanged": false,
+      "changeType": "firing_mode_options"
     }
   ],
-  "note": "Source numeric differences do not prove intentional in-game balance changes."
+  "note": "Six mode-option changes detected in initial sync; no base TTK or Tournament Edition changes. Source revisions are not confirmed EA balance patches."
 }
