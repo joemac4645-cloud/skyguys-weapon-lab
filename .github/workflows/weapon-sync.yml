@@ -1,5 +1,10 @@
 name: Daily BF6 weapon audit and publish
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync_weapons.py'
+      - '.github/workflows/weapon-sync.yml'
   schedule:
     - cron: '17 13 * * *'
   workflow_dispatch:
@@ -21,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Validate synchronizer
         run: python -m py_compile scripts/sync_weapons.py
+      - name: Validate TTK and tournament rules
+        run: python -m unittest discover -s tests -v
       - name: Sync live BF6 weapons and compute differences
         run: python scripts/sync_weapons.py
       - name: Commit verified snapshots and reports
