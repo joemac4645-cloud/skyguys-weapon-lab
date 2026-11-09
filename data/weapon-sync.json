@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "lastCheckedAt": "2026-11-09T18:52:33Z",
+  "lastDataChangeAt": "2026-11-09T18:52:33Z",
+  "source": "https://raw.githubusercontent.com/raymdl/BF6-Weapon-Analyzer/main/data/weapons.json",
+  "rosterCount": 67,
+  "rosterSha256": "1f158cb41cf99f9e84f246bec2d49420b614ee2ed03ba9cfe99706d825432855",
+  "currentCheckChanges": 6,
+  "lastChangeCount": 6,
+  "lastChangeReport": "./data/last-changes.json",
+  "status": "ok",
+  "automaticSync": true,
+  "tournamentBanThroughMs": 201
+}
