@@ -111,10 +111,10 @@ details{border-top:1px solid #373c40;padding:11px 0}summary{cursor:pointer;color
     <div class="stat"><div class="label">Weapons monitored</div><div class="sp-sync-value" id="syncRoster">—</div></div>
     <div class="stat"><div class="label">Latest check changes</div><div class="sp-sync-value" id="syncLastCount">—</div></div>
   </div>
-  <h3>Last numerical changes</h3>
+  <h3>Latest source changes</h3>
   <div id="syncRecent" class="sp-sync-feed">Checking saved reports…</div>
   <details><summary>Previous change audits</summary><div id="syncHistory" class="sp-sync-feed">—</div></details>
-  <p class="small">Numbers are compared with the BF6 Weapon Analyzer each day. Source revisions may be corrections, not confirmed EA balance patches. TTK is modeled for 100 HP and base weapons.</p>
+  <p class="small">Weapon values are checked daily. Firing-mode options and number changes are tracked separately from TTK effects. Source revisions do not prove EA balance patches.</p>
 </div><div class="panel"><h2>Stat Changes</h2><div class="controls"><div class="control"><label>Weapon</label><select id="diffweapon"></select></div><button id="diffcsv">Export all changed fields CSV</button></div><div class="tableWrap" id="diffdetail"></div></div><div class="panel"><h2>Local History</h2><p class="small">Compares data saved in this browser.</p><div class="small" id="snapshots">No local history available.</div><button id="downloadSnapshot">Export current source snapshot</button></div></section>
 <div class="panel"><details><summary>SOURCE &amp; METHODOLOGY</summary><p class="small">Modeled 100 HP chest TTK uses source damage curves and firing cadence. BTK changes at damage thresholds. Special fire modes, pellets, armor and attachments may need additional data. Tournament asterisk uses displayed 0m TTK: 201 ms or faster is banned, as are DMRs, shotguns and snipers except Interdictor.</p><p class="small">Season changes compare published data snapshots, not confirmed patch intentions. Builder values are manual.</p><p class="small"><a href="https://raymdl.github.io/BF6-Weapon-Analyzer/" rel="noopener" target="_blank">BF6 Weapon Analyzer</a> • <a href="https://github.com/raymdl/BF6-Weapon-Analyzer" rel="noopener" target="_blank">Source project</a> • <a href="https://raw.githubusercontent.com/raymdl/BF6-Weapon-Analyzer/main/data/weapons.json" rel="noopener" target="_blank">Current JSON</a> • <a href="https://raw.githubusercontent.com/raymdl/BF6-Weapon-Analyzer/main/v1.4.3.1/data/weapons.json" rel="noopener" target="_blank">Archived JSON</a></p></details></div><footer class="footer">SKYGUY’S WEAPON LAB  ·  Independent BF6 data. Not affiliated with EA.</footer></main><div id="toast" role="status"></div>
 <div id="cardOverlay" class="cardOverlay" role="dialog" aria-modal="true" aria-label="Weapon comparison card preview" hidden>
@@ -544,6 +544,7 @@ $('csv').onclick=()=>csvExport([cols.map(x=>x[1]),...displayed().map(w=>[w.name,
    const overview=document.createElement('p');overview.className='small';overview.textContent='Last change: '+when(report.checkedAt)+' · '+report.totalChanged+' affected weapon(s).';box.append(overview);
    for(const change of report.changes.slice(0,32)){
      let title=change.weapon||change.id||'Weapon';
+     if(change.fields?.length&&change.fields.every(f=>f.field.startsWith('availableFireModes')))title+=' · FIRE MODES';
      if(change.new)title+=' · NEW';
      if(change.removed)title+=' · REMOVED';
      const rows=[];
