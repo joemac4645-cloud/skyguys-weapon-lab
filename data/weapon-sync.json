@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastCheckedAt": "2026-11-10T13:12:38Z",
+  "lastCheckedAt": "2026-11-10T13:13:07Z",
   "lastDataChangeAt": "2026-11-10T13:12:38Z",
   "source": "https://raw.githubusercontent.com/raymdl/BF6-Weapon-Analyzer/main/data/weapons.json",
   "rosterCount": 67,
@@ -10,7 +10,7 @@
     "Mini Scout"
   ],
   "gameUpdate": "2.1.2.0",
-  "currentCheckChanges": 2,
+  "currentCheckChanges": 0,
   "lastChangeCount": 2,
   "lastChangeReport": "./data/last-changes.json",
   "status": "ok",
