@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.10.3",
-  "label": "NSW4 Carbine released",
-  "note": "NSW4 listed as TTK pending with separate Battlefield Labs preview stats; verified analyzer data will supersede."
+  "version": "2026.11.10.4",
+  "label": "NSW4 modeled TTK",
+  "note": "NSW4 full-auto 183ms Labs-based 0m estimate, distance TTK modeled, awaits independent release verification"
 }
