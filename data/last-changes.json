@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-10T13:12:38Z",
-  "beforeSha256": "1f158cb41cf99f9e84f246bec2d49420b614ee2ed03ba9cfe99706d825432855",
-  "afterSha256": "a0c8e9debd018b506b937f3c45804d8268aefb9f30b3d77ee2e79f08a9948f31",
-  "totalChanged": 2,
-  "newCount": 0,
+  "checkedAt": "2026-11-10T20:54:01Z",
+  "beforeSha256": "a0c8e9debd018b506b937f3c45804d8268aefb9f30b3d77ee2e79f08a9948f31",
+  "afterSha256": "7220df755227a9af213d3c9ec2e5a194156c94f9b7bc40ff9a215a2b705ba190",
+  "totalChanged": 3,
+  "newCount": 1,
   "removedCount": 0,
   "changes": [
     {
@@ -12,39 +12,14 @@
       "type": "Sniper Rifle",
       "fields": [
         {
-          "field": "dmg.length",
-          "before": 3,
-          "after": 5
-        },
-        {
-          "field": "dmg[3].d",
-          "before": null,
-          "after": 58
-        },
-        {
-          "field": "dmg[3].r",
-          "before": null,
-          "after": 150
-        },
-        {
           "field": "dmg[3].source",
-          "before": null,
-          "after": "EA 2.1.2.0 boundary"
-        },
-        {
-          "field": "dmg[4].d",
-          "before": null,
-          "after": 50
-        },
-        {
-          "field": "dmg[4].r",
-          "before": null,
-          "after": 150
+          "before": "EA 2.1.2.0 boundary",
+          "after": "Frosty"
         },
         {
           "field": "dmg[4].source",
-          "before": null,
-          "after": "EA 2.1.2.0"
+          "before": "EA 2.1.2.0",
+          "after": "Frosty"
         }
       ],
       "ttkChanges": [],
@@ -64,91 +39,74 @@
       "type": "SMG",
       "fields": [
         {
-          "field": "dmg.length",
-          "before": 9,
-          "after": 11
-        },
-        {
-          "field": "dmg[10].d",
-          "before": null,
-          "after": 12.76
-        },
-        {
-          "field": "dmg[10].r",
-          "before": null,
-          "after": 75
-        },
-        {
           "field": "dmg[10].source",
-          "before": null,
-          "after": "EA 2.1.2.0"
-        },
-        {
-          "field": "dmg[7].r",
-          "before": 75,
-          "after": 55
+          "before": "EA 2.1.2.0",
+          "after": "Frosty"
         },
         {
           "field": "dmg[7].source",
-          "before": "Frosty",
-          "after": "EA 2.1.2.0 boundary"
+          "before": "EA 2.1.2.0 boundary",
+          "after": "Frosty"
         },
         {
           "field": "dmg[8].d",
-          "before": 14.62,
-          "after": 14.3
-        },
-        {
-          "field": "dmg[8].r",
-          "before": 75,
-          "after": 55
+          "before": 14.3,
+          "after": 14.62
         },
         {
           "field": "dmg[8].source",
-          "before": "Frosty",
-          "after": "EA 2.1.2.0"
+          "before": "EA 2.1.2.0",
+          "after": "Frosty"
         },
         {
           "field": "dmg[9].d",
-          "before": null,
-          "after": 14.3
-        },
-        {
-          "field": "dmg[9].r",
-          "before": null,
-          "after": 75
+          "before": 14.3,
+          "after": 14.62
         },
         {
           "field": "dmg[9].source",
-          "before": null,
-          "after": "EA 2.1.2.0"
+          "before": "EA 2.1.2.0",
+          "after": "Frosty"
         }
       ],
       "ttkChanges": [
         {
-          "meters": 75,
+          "meters": 55.01,
           "before": {
-            "damage": 17.13,
-            "btk": 6,
-            "ttkMs": 375.0005
+            "damage": 14.3,
+            "btk": 7,
+            "ttkMs": 450.0006
           },
           "after": {
-            "damage": 14.3,
+            "damage": 14.62,
             "btk": 7,
             "ttkMs": 450.0006
           }
         },
         {
-          "meters": 100,
+          "meters": 60,
           "before": {
-            "damage": 14.62,
+            "damage": 14.3,
             "btk": 7,
             "ttkMs": 450.0006
           },
           "after": {
-            "damage": 12.76,
-            "btk": 8,
-            "ttkMs": 525.0007
+            "damage": 14.62,
+            "btk": 7,
+            "ttkMs": 450.0006
+          }
+        },
+        {
+          "meters": 75,
+          "before": {
+            "damage": 14.3,
+            "btk": 7,
+            "ttkMs": 450.0006
+          },
+          "after": {
+            "damage": 14.62,
+            "btk": 7,
+            "ttkMs": 450.0006
           }
         }
       ],
@@ -163,6 +121,24 @@
         "reason": "201 ms or faster banned"
       },
       "tournamentStatusChanged": false
+    },
+    {
+      "id": "nsw4",
+      "weapon": "NSW4",
+      "type": "Carbine",
+      "new": true,
+      "fields": [],
+      "ttk0m": {
+        "damage": 35.22,
+        "btk": 3,
+        "ttkMs": 183.3335
+      },
+      "tournamentAfter": {
+        "allowed": false,
+        "ttk0mDisplayed": 183,
+        "reason": "201 ms or faster banned"
+      },
+      "ttkChanges": []
     }
   ],
   "note": "Source values, including firing-mode options, may change without a confirmed EA balance patch."
