@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 SOURCE = "https://raw.githubusercontent.com/raymdl/BF6-Weapon-Analyzer/main/data/"
 KEYS = ("rpm","mag","tacRld","emptyRld","bulletVel","recoilV","recoilDir","recoilVar","recoilIncAds","fireMode","availableFireModes","fireModes","dmg","recoil","spread","spreadDyn","reloadSpeed","cal")
-RANGES = (0,5,10,15,20,30,40,50,75,100)
+RANGES = (0,5,10,15,20,30,40,50,55.01,60,75.01,80,100,150.01,160)
 
 def read(path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
