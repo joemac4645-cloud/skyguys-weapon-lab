@@ -1,12 +1,13 @@
-name: Daily BF6 weapon audit and publish
+name: BF6 weapon audit and publish (every 4 hours)
 on:
   push:
     branches: [main]
     paths:
       - 'scripts/sync_weapons.py'
       - '.github/workflows/weapon-sync.yml'
+      - 'tests/test_weapon_sync.py'
   schedule:
-    - cron: '17 13 * * *'
+    - cron: '17 */4 * * *'
   workflow_dispatch:
 permissions:
   contents: write
