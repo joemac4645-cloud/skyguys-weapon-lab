@@ -117,6 +117,39 @@ def tournament(w):
     whole=math.floor(ttk+.5)
     return {"allowed":whole>201,"ttk0mDisplayed":whole,"reason":"201 ms or faster banned"}
 
+
+# EA game update 2.1.2.0 (Nov 10, 2026) gives explicit damage values before
+# the community analyzer has refreshed. Patch ONLY the known older curve;
+# when new source data appears, its values take precedence automatically.
+EA_PATCH_URL = "https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-game-update-2-1-2-0"
+
+def official_patch_interims(weapons):
+    applied=[]
+    for w in weapons:
+        curve=w.get("dmg",[])
+        simple=[(p.get("r"),p.get("d")) for p in curve]
+        if w.get("id")=="scw10" and simple==[
+            (0,35.22),(9,35.22),(9,26.05),(21,26.05),(21,20.67),
+            (36,20.67),(36,17.13),(75,17.13),(75,14.62)]:
+            w["dmg"]=curve[:7]+[
+                {"r":55,"d":17.13,"source":"EA 2.1.2.0 boundary"},
+                {"r":55,"d":14.3,"source":"EA 2.1.2.0"},
+                {"r":75,"d":14.3,"source":"EA 2.1.2.0"},
+                {"r":75,"d":12.76,"source":"EA 2.1.2.0"}]
+            w["damageStatus"]="official_patch_interim"
+            w["damageSource"]="EA 2.1.2.0: 14.3 chest damage from 55-75m, 12.76 beyond 75m; pre-55m baseline retained from analyzer."
+            w["eaPatch"]={"version":"2.1.2.0","url":EA_PATCH_URL,"interim":True}
+            applied.append(w["name"])
+        elif w.get("id")=="miniscout" and simple==[(0,62),(21,62),(75,58)]:
+            w["dmg"]=curve+[
+                {"r":150,"d":58,"source":"EA 2.1.2.0 boundary"},
+                {"r":150,"d":50,"source":"EA 2.1.2.0"}]
+            w["damageStatus"]="official_patch_interim"
+            w["damageSource"]="EA 2.1.2.0: beyond 150m, 50 chest damage and 33.5 limb damage; model excludes travel time."
+            w["eaPatch"]={"version":"2.1.2.0","url":EA_PATCH_URL,"interim":True}
+            applied.append(w["name"])
+    return applied
+
 def main():
     now=dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00","Z")
     weapon_path=DATA/"weapons.json"
@@ -124,6 +157,7 @@ def main():
     old=read(weapon_path,[])
     old_zones=read(zones_path,{"weapons":{}})
     current=download("weapons.json")
+    applied_interims=official_patch_interims(current)
     new_zones=download("hit_zones.json")
     validate(current,new_zones,old)
     old_by={w["id"]:w for w in old}
@@ -178,9 +212,10 @@ def main():
     write(DATA/"history-index.json",history[:180])
     write(DATA/"weapon-sync.json",{"schemaVersion":1,"lastCheckedAt":now,"lastDataChangeAt":last.get("checkedAt"),
           "source":SOURCE+"weapons.json","rosterCount":len(current),"rosterSha256":new_hash,
+          "officialPatchInterims":applied_interims,"gameUpdate":"2.1.2.0",
           "currentCheckChanges":len(changes),"lastChangeCount":last.get("totalChanged",0),
           "lastChangeReport":"./data/last-changes.json","status":"ok","automaticSync":True,"tournamentBanThroughMs":201})
-    print(json.dumps({"roster":len(current),"checkedAt":now,"sourceUpdated":is_new_data,"numericChanges":len(changes)},indent=2))
+    print(json.dumps({"roster":len(current),"checkedAt":now,"sourceUpdated":is_new_data,"numericChanges":len(changes),"officialPatchInterims":applied_interims},indent=2))
 
 if __name__=="__main__":
     try:main()
