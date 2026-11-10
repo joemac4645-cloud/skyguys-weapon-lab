@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.10.4",
-  "label": "NSW4 modeled TTK",
-  "note": "NSW4 full-auto 183ms Labs-based 0m estimate, distance TTK modeled, awaits independent release verification"
+  "version": "2026.11.10.5",
+  "label": "NSW4 183ms estimate",
+  "note": "NSW4 live in rankings/compare with Labs-based full-auto 0m TTK and provisional distance bands; no tournament asterisk until confirmed release data"
 }
