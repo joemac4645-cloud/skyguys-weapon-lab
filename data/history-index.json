@@ -1,5 +1,17 @@
 [
   {
+    "at": "2026-11-10T13:12:38Z",
+    "count": 2,
+    "new": 0,
+    "removed": 0,
+    "weapons": [
+      "Mini Scout",
+      "SCW-10"
+    ],
+    "oldHash": "1f158cb41cf99f9e",
+    "newHash": "a0c8e9debd018b50"
+  },
+  {
     "at": "2026-11-09T18:52:33Z",
     "count": 6,
     "new": 0,

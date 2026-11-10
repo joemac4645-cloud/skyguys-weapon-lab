@@ -1,221 +1,169 @@
 {
-  "checkedAt": "2026-11-09T18:52:33Z",
-  "beforeSha256": "99669dc6ea173dac81285a871a3090a78c5b325d2d0734913492b0ff4d0631bd",
-  "afterSha256": "1f158cb41cf99f9e84f246bec2d49420b614ee2ed03ba9cfe99706d825432855",
-  "totalChanged": 6,
+  "checkedAt": "2026-11-10T13:12:38Z",
+  "beforeSha256": "1f158cb41cf99f9e84f246bec2d49420b614ee2ed03ba9cfe99706d825432855",
+  "afterSha256": "a0c8e9debd018b506b937f3c45804d8268aefb9f30b3d77ee2e79f08a9948f31",
+  "totalChanged": 2,
   "newCount": 0,
   "removedCount": 0,
   "changes": [
     {
-      "id": "cz3a1",
-      "weapon": "CZ3A1",
+      "id": "miniscout",
+      "weapon": "Mini Scout",
+      "type": "Sniper Rifle",
+      "fields": [
+        {
+          "field": "dmg.length",
+          "before": 3,
+          "after": 5
+        },
+        {
+          "field": "dmg[3].d",
+          "before": null,
+          "after": 58
+        },
+        {
+          "field": "dmg[3].r",
+          "before": null,
+          "after": 150
+        },
+        {
+          "field": "dmg[3].source",
+          "before": null,
+          "after": "EA 2.1.2.0 boundary"
+        },
+        {
+          "field": "dmg[4].d",
+          "before": null,
+          "after": 50
+        },
+        {
+          "field": "dmg[4].r",
+          "before": null,
+          "after": 150
+        },
+        {
+          "field": "dmg[4].source",
+          "before": null,
+          "after": "EA 2.1.2.0"
+        }
+      ],
+      "ttkChanges": [],
+      "tournamentBefore": {
+        "allowed": false,
+        "reason": "Category ban"
+      },
+      "tournamentAfter": {
+        "allowed": false,
+        "reason": "Category ban"
+      },
+      "tournamentStatusChanged": false
+    },
+    {
+      "id": "scw10",
+      "weapon": "SCW-10",
       "type": "SMG",
       "fields": [
         {
-          "field": "availableFireModes.length",
-          "before": 2,
-          "after": 3
+          "field": "dmg.length",
+          "before": 9,
+          "after": 11
         },
         {
-          "field": "availableFireModes[1]",
-          "before": "single",
-          "after": "burst"
-        },
-        {
-          "field": "availableFireModes[2]",
+          "field": "dmg[10].d",
           "before": null,
-          "after": "single"
+          "after": 12.76
+        },
+        {
+          "field": "dmg[10].r",
+          "before": null,
+          "after": 75
+        },
+        {
+          "field": "dmg[10].source",
+          "before": null,
+          "after": "EA 2.1.2.0"
+        },
+        {
+          "field": "dmg[7].r",
+          "before": 75,
+          "after": 55
+        },
+        {
+          "field": "dmg[7].source",
+          "before": "Frosty",
+          "after": "EA 2.1.2.0 boundary"
+        },
+        {
+          "field": "dmg[8].d",
+          "before": 14.62,
+          "after": 14.3
+        },
+        {
+          "field": "dmg[8].r",
+          "before": 75,
+          "after": 55
+        },
+        {
+          "field": "dmg[8].source",
+          "before": "Frosty",
+          "after": "EA 2.1.2.0"
+        },
+        {
+          "field": "dmg[9].d",
+          "before": null,
+          "after": 14.3
+        },
+        {
+          "field": "dmg[9].r",
+          "before": null,
+          "after": 75
+        },
+        {
+          "field": "dmg[9].source",
+          "before": null,
+          "after": "EA 2.1.2.0"
         }
       ],
-      "ttkChanges": [],
+      "ttkChanges": [
+        {
+          "meters": 75,
+          "before": {
+            "damage": 17.13,
+            "btk": 6,
+            "ttkMs": 375.0005
+          },
+          "after": {
+            "damage": 14.3,
+            "btk": 7,
+            "ttkMs": 450.0006
+          }
+        },
+        {
+          "meters": 100,
+          "before": {
+            "damage": 14.62,
+            "btk": 7,
+            "ttkMs": 450.0006
+          },
+          "after": {
+            "damage": 12.76,
+            "btk": 8,
+            "ttkMs": 525.0007
+          }
+        }
+      ],
       "tournamentBefore": {
         "allowed": false,
-        "ttk0mDisplayed": 183,
+        "ttk0mDisplayed": 150,
         "reason": "201 ms or faster banned"
       },
       "tournamentAfter": {
         "allowed": false,
-        "ttk0mDisplayed": 183,
+        "ttk0mDisplayed": 150,
         "reason": "201 ms or faster banned"
       },
-      "tournamentStatusChanged": false,
-      "changeType": "firing_mode_options"
-    },
-    {
-      "id": "kord6p67",
-      "weapon": "KORD 6P67",
-      "type": "Assault Rifle",
-      "fields": [
-        {
-          "field": "availableFireModes.length",
-          "before": 2,
-          "after": 3
-        },
-        {
-          "field": "availableFireModes[1]",
-          "before": "single",
-          "after": "burst"
-        },
-        {
-          "field": "availableFireModes[2]",
-          "before": null,
-          "after": "single"
-        }
-      ],
-      "ttkChanges": [],
-      "tournamentBefore": {
-        "allowed": true,
-        "ttk0mDisplayed": 267,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentAfter": {
-        "allowed": true,
-        "ttk0mDisplayed": 267,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentStatusChanged": false,
-      "changeType": "firing_mode_options"
-    },
-    {
-      "id": "kv9",
-      "weapon": "KV9",
-      "type": "SMG",
-      "fields": [
-        {
-          "field": "availableFireModes.length",
-          "before": 2,
-          "after": 3
-        },
-        {
-          "field": "availableFireModes[1]",
-          "before": "single",
-          "after": "burst"
-        },
-        {
-          "field": "availableFireModes[2]",
-          "before": null,
-          "after": "single"
-        }
-      ],
-      "ttkChanges": [],
-      "tournamentBefore": {
-        "allowed": false,
-        "ttk0mDisplayed": 167,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentAfter": {
-        "allowed": false,
-        "ttk0mDisplayed": 167,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentStatusChanged": false,
-      "changeType": "firing_mode_options"
-    },
-    {
-      "id": "pw5a3",
-      "weapon": "PW5A3",
-      "type": "SMG",
-      "fields": [
-        {
-          "field": "availableFireModes.length",
-          "before": 2,
-          "after": 3
-        },
-        {
-          "field": "availableFireModes[1]",
-          "before": "single",
-          "after": "burst"
-        },
-        {
-          "field": "availableFireModes[2]",
-          "before": null,
-          "after": "single"
-        }
-      ],
-      "ttkChanges": [],
-      "tournamentBefore": {
-        "allowed": true,
-        "ttk0mDisplayed": 233,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentAfter": {
-        "allowed": true,
-        "ttk0mDisplayed": 233,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentStatusChanged": false,
-      "changeType": "firing_mode_options"
-    },
-    {
-      "id": "sg553r",
-      "weapon": "SG 553R",
-      "type": "Carbine",
-      "fields": [
-        {
-          "field": "availableFireModes.length",
-          "before": 2,
-          "after": 3
-        },
-        {
-          "field": "availableFireModes[1]",
-          "before": "single",
-          "after": "burst"
-        },
-        {
-          "field": "availableFireModes[2]",
-          "before": null,
-          "after": "single"
-        }
-      ],
-      "ttkChanges": [],
-      "tournamentBefore": {
-        "allowed": false,
-        "ttk0mDisplayed": 167,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentAfter": {
-        "allowed": false,
-        "ttk0mDisplayed": 167,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentStatusChanged": false,
-      "changeType": "firing_mode_options"
-    },
-    {
-      "id": "umg40",
-      "weapon": "UMG-40",
-      "type": "SMG",
-      "fields": [
-        {
-          "field": "availableFireModes.length",
-          "before": 2,
-          "after": 3
-        },
-        {
-          "field": "availableFireModes[1]",
-          "before": "single",
-          "after": "burst"
-        },
-        {
-          "field": "availableFireModes[2]",
-          "before": null,
-          "after": "single"
-        }
-      ],
-      "ttkChanges": [],
-      "tournamentBefore": {
-        "allowed": true,
-        "ttk0mDisplayed": 283,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentAfter": {
-        "allowed": true,
-        "ttk0mDisplayed": 283,
-        "reason": "201 ms or faster banned"
-      },
-      "tournamentStatusChanged": false,
-      "changeType": "firing_mode_options"
+      "tournamentStatusChanged": false
     }
   ],
-  "note": "Six mode-option changes detected in initial sync; no base TTK or Tournament Edition changes. Source revisions are not confirmed EA balance patches."
+  "note": "Source values, including firing-mode options, may change without a confirmed EA balance patch."
 }

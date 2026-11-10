@@ -4140,18 +4140,28 @@
         "source": "Frosty"
       },
       {
-        "r": 75,
+        "r": 55,
         "d": 17.13,
-        "source": "Frosty"
+        "source": "EA 2.1.2.0 boundary"
+      },
+      {
+        "r": 55,
+        "d": 14.3,
+        "source": "EA 2.1.2.0"
       },
       {
         "r": 75,
-        "d": 14.62,
-        "source": "Frosty"
+        "d": 14.3,
+        "source": "EA 2.1.2.0"
+      },
+      {
+        "r": 75,
+        "d": 12.76,
+        "source": "EA 2.1.2.0"
       }
     ],
-    "damageStatus": "verified",
-    "damageSource": "Frosty PD_10x25mm_PDW tweakable damage curve referenced by APC10_WB, first read in 1.4.2.5.",
+    "damageStatus": "official_patch_interim",
+    "damageSource": "EA 2.1.2.0: 14.3 chest damage from 55-75m, 12.76 beyond 75m; pre-55m baseline retained from analyzer.",
     "reloadSpeed": 0.980769,
     "provenance": {
       "frosty": {
@@ -4162,6 +4172,11 @@
         ],
         "emptyReloadEvidence": "reference-data/provenance/frosty-1.4.2.5-empty-reloads.json#weapons/scw10"
       }
+    },
+    "eaPatch": {
+      "version": "2.1.2.0",
+      "url": "https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-game-update-2-1-2-0",
+      "interim": true
     }
   },
   {
@@ -7468,10 +7483,20 @@
         "r": 75,
         "d": 58,
         "source": "Frosty"
+      },
+      {
+        "r": 150,
+        "d": 58,
+        "source": "EA 2.1.2.0 boundary"
+      },
+      {
+        "r": 150,
+        "d": 50,
+        "source": "EA 2.1.2.0"
       }
     ],
-    "damageStatus": "verified",
-    "damageSource": "Frosty PD_556x45mmNATO_Bolt tweakable damage curve referenced by MiniFix_WB, first read in 1.4.2.5.",
+    "damageStatus": "official_patch_interim",
+    "damageSource": "EA 2.1.2.0: beyond 150m, 50 chest damage and 33.5 limb damage; model excludes travel time.",
     "reloadSpeed": 1,
     "provenance": {
       "frosty": {
@@ -7486,6 +7511,11 @@
           "evidence": "reference-data/provenance/frosty-1.4.2.5-cadence-reloads-spread-selectors-2026-09-12.json#weapons/miniscout"
         }
       }
+    },
+    "eaPatch": {
+      "version": "2.1.2.0",
+      "url": "https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-game-update-2-1-2-0",
+      "interim": true
     }
   },
   {

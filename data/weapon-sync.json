@@ -1,12 +1,17 @@
 {
   "schemaVersion": 1,
-  "lastCheckedAt": "2026-11-09T18:52:33Z",
-  "lastDataChangeAt": "2026-11-09T18:52:33Z",
+  "lastCheckedAt": "2026-11-10T13:12:38Z",
+  "lastDataChangeAt": "2026-11-10T13:12:38Z",
   "source": "https://raw.githubusercontent.com/raymdl/BF6-Weapon-Analyzer/main/data/weapons.json",
   "rosterCount": 67,
-  "rosterSha256": "1f158cb41cf99f9e84f246bec2d49420b614ee2ed03ba9cfe99706d825432855",
-  "currentCheckChanges": 6,
-  "lastChangeCount": 6,
+  "rosterSha256": "a0c8e9debd018b506b937f3c45804d8268aefb9f30b3d77ee2e79f08a9948f31",
+  "officialPatchInterims": [
+    "SCW-10",
+    "Mini Scout"
+  ],
+  "gameUpdate": "2.1.2.0",
+  "currentCheckChanges": 2,
+  "lastChangeCount": 2,
   "lastChangeReport": "./data/last-changes.json",
   "status": "ok",
   "automaticSync": true,
