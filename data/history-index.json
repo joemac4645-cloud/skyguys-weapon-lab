@@ -1,5 +1,16 @@
 [
   {
+    "at": "2026-11-11T05:08:21Z",
+    "count": 1,
+    "new": 0,
+    "removed": 0,
+    "weapons": [
+      "PSR"
+    ],
+    "oldHash": "7220df755227a9af",
+    "newHash": "af9e94541b88366f"
+  },
+  {
     "at": "2026-11-10T20:54:01Z",
     "count": 3,
     "new": 1,
