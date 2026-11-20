@@ -1,5 +1,16 @@
 [
   {
+    "at": "2026-11-20T07:13:04Z",
+    "count": 1,
+    "new": 0,
+    "removed": 0,
+    "weapons": [
+      "SGX"
+    ],
+    "oldHash": "af9e94541b88366f",
+    "newHash": "04637068eecb4624"
+  },
+  {
     "at": "2026-11-11T05:08:21Z",
     "count": 1,
     "new": 0,
